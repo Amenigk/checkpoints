@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap');
+
+
+#logo {
+     width:300px ;
+     height: 34px;
+    margin-top: 10px;
+    
+}
+li
+{ list-style:  none;
+}
+header{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    opacity: 90%;
+
+}
+nav{
+  display: flex;
+  justify-content: space-around ;
+  
+}
+
+.NavMenu{
+  display: flex;
+  justify-content:end;
+   
+}
+.NavMenuItems{
+  font-family: Roboto, Arial, sans-serif;  
+  font-size: 15px;
+  font-weight:400;
+  margin-right:20px;
+  color: #ababaa;
+  text-shadow: 30px;
+  
+
+}
+.NavMenuItems:hover{
+  cursor: pointer;
+  color:#00b39b; 
+}
+.SubNavMenu{
+  display: none;
+  position: absolute;
+  width: 160px;
+  margin-left: -180px;
+ background-color: white;
+ opacity: 100%;
+  
+}
+
+.NavMenuItems:hover .SubNavMenu 
+{
+  display: block;
+  /*flex-direction: column;*/
+  margin-left: -100px; 
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+   
+}
+.SubNavMenuItems{
+  font-family: Roboto, Arial, sans-serif;  
+  font-size: 15px;
+  font-weight:400;
+  line-height: 18px;
+  margin-right:20px;
+  color: #ababaa;
+  background: white;
+  padding:   12px 0px 12px 16px; 
+  text-shadow: 3px;
+  width: 220px;
+  margin-left: -40px;
+
+}
+.SubNavMenuItems:hover{
+  color:#00b39b; 
+  background: rgb(238, 232, 232);
+ 
+}
+.title{
+  text-align: center;
+   margin-top: 50px;
+}
+.T1{
+Font-family: "Work Sans", Arial, sans-serif;
+Font-size: 34px;
+Font-weight: 300;
+Line-height: 44.2px;
+color: rgb(0, 179, 155);
+text-align: center;
+}
+.text
+{
+  display: flex;
+  justify-content: space-between;
+  width: 1015px;
+  margin :  33px 167px 60px 167px;
+
+}
+.para{
+  font-family: Roboto, Arial, sans-serif;
+  Font-size: 16px;
+  Font-weight: 400;
+  Line-height: 28px;
+  color: rgb(116, 116, 116);
+  padding: 0 20px 0 20px;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  
+  }
+h1{
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 26px;
+  Font-weight: 400;
+  Line-height: 33.8px;
+  color: rgb(255, 255, 255); 
+}  
+h2{
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 24px;
+  Font-weight: 300;
+  Line-height: 28.8px;
+  color: rgb(255, 255, 255);
+}
+.Gbox{
+  display: flex;
+  flex-direction: column;
+  background-color: #1AD1B9;
+  color: white;
+  height:345px;
+  width: 311px;
+  padding:20px 20px 0 20px ;
+  margin: 0 10px 0 180px ;
+  border-radius:  15px;
+  align-content:  space-between;
+
+}
+.Bbox{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color:#3D83DF;
+  color: white;
+  height:345px;
+  width: 311px;
+  padding:20px 20px 0 20px ;
+  margin: 0 10px 0 10px ;
+  border-radius:  15px;
+  
+}
+.BKbox{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color:#2F3A46;
+  color: white;
+  height:345px;
+  width: 311px;
+  padding:20px 20px 0 20px ;
+  margin: 0 160px 0 25px ;
+  border-radius:  15px;
+}
+#g{
+  cursor: pointer;
+  background-color: #1AD1B9;
+  color: white;
+  font-family: "Work Sans", Arial, sans-serif;
+  text-decoration: underline ;
+  border: 0cm;
+  font-size: 19.2px;
+  Font-weight: 400;
+  Line-height: 24.96px;
+  width: 170px;
+}
+option{
+  color: black;
+  background-color: white;
+}
+#b{
+  cursor: pointer;
+  background-color:#3D83DF;
+  color: white;
+  font-family: "Work Sans", Arial, sans-serif;
+  text-decoration: underline;
+  border: 0cm;
+  font-size: 19.2px;
+  Font-weight: 400;
+  Line-height: 24.96px;
+  width: 170px;
+}
+#bk{
+  cursor: pointer;
+  background-color:#2F3A46;
+  color: white;
+  font-family: "Work Sans", Arial, sans-serif;
+  text-decoration: underline;
+  border: 0cm;
+  font-size: 19.2px;
+  Font-weight: 400;
+  Line-height: 24.96px;
+  width: 170px;
+
+}
+.link{
+  display: flex;
+  /* align-self: flex-start; */
+  justify-content: space-between;
+  margin: 30px 180px  0 180px;
+}
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  width: 845px;
+  justify-content: space-between;
+    /* margin:  10px ;  */
+  padding: 50px 0 50px 50px ;
+}
+
+.links :hover{
+  cursor: pointer;
+  color:#00b39b; 
+  filter: drop-shadow(1px 1px 2px #00b39b ) invert(5%); 
+  /* background-color: white; */
+  /* opacity: 100%; */
+  /* filter: contrast(60%); */
+  /* filter: hue-rotate(90deg); */
+  /* filter: url("../../media/examples/shadow.svg#element-id"); */
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 50%  50% ;
+  grid-template-rows: 100% ;
+  height:600px ;
+  /* width:1100%; */
+  background-color: #e5faf8;
+  background-image:  linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+   background-size: 100%; 
+}
+.col1{
+  background-image:  url(https://www.docplanner.com/img/logo.png) ;
+  background-repeat: no-repeat;
+  background-position: 25px 300px;
+ }
+  /* */
+  .T2{
+    Font-family: "Work Sans", Arial, sans-serif;
+    Font-size: 34px;
+    Font-weight: 300;
+    Line-height: 44.2px;
+    color: rgb(0, 179, 155);
+    height: 88px;
+    width: 477px;
+    padding: 50px 150px  20px 150px;
+    }
+  
+    .para2{
+      font-family: Roboto, Arial, sans-serif;
+      Font-size: 14px;
+      Font-weight: 400;
+      Line-height: 28px;
+      color: rgb(116, 116, 116);
+      padding: 0px 150px  50px 150px;
+    }
+.col2{
+  display: flex;
+  flex-wrap: wrap;
+  
+ 
+}
+.block{
+  background: white;
+  height:220px ;
+  width: 222px;
+   padding: 20px 0 0 0 ; 
+    border-radius: 7px;
+  border:  rgb(0, 179, 155);
+   margin: 10px;
+   text-align: center;
+}
+h3{
+  Font-family: "Work Sans", Arial, sans-serif;
+  Font-size: 24px;
+  Font-weight: 300;
+  Line-height: 31.2px;
+  color: rgb(0, 179, 155);
+  text-align: center;
+}
+ p{
+      font-family: Roboto, Arial, sans-serif;
+      Font-size: 13px;
+      Font-weight: 400;
+      Line-height: 16.9px;
+      color: rgb(116, 116, 116);
+      
+    }
+ #flag{
+  transform: matrix(1,0,0,1,0,40);
+  padding: 15px 0 15px 0;
+ }
+ #visits{
+  transform: matrix(1,0,0,1,0,10);
+ }
+ #patients{
+  transform: matrix(1,0,0,1,0,20);
+ }
+#doctors{
+  transform: matrix(1,0,0,1,0,-20);
+ }
+ .parac{
+     font-family: Roboto, Arial, sans-serif;
+      Font-size: 14px;
+      Font-weight: 400;
+      Line-height: 28px;
+      color: rgb(116, 116, 116);
+      padding: 0px 150px  50px 150px;
+      text-align: center;
+ }
+ .img{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  height: 1200px;
+  width: 1015px;
+  box-sizing: border-box;
+  /* padding: 10px 10px 0px 10px; */
+  margin: 0px 160px 0px 200px;
+  /* border: 20px;
+  border-radius: 10px;  */
+  
+ }
+  
+  .imgbox{
+    display: flex;
+    flex-wrap: wrap;
+    height: 371px;
+    width: 300px;
+    margin: 10px 10px 10px 10px; 
+    padding: 0;
+    background-color:rgb(252, 249, 249);
+    border-radius: 6px ;
+    border: 5px !important;
+    border-color: #31302f;
+    }
+
+ .imgbox:hover{
+    cursor: pointer;
+    background-color:white;
+    border-radius: 6px;
+    border: 5px !important;
+    border-color: #d3cfc9;
+    box-shadow:0 5px 10px 0 #d3cfc9; 
+ }
+ #tof{
+   height:280px;
+   width:300px;
+   border-radius: 6px;
+ }
+ #bb{
+  background-color: #3D83DF;
+  Font-family: Roboto, Arial, sans-serif;
+  Font-size: 10px;
+  Font-weight: 700;
+  Line-height: 10px;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  width:100px;
+  border: 0cm;
+  border-radius: 5px;
+  /* margin-top 0 10px 0 10px; */
+ }
+ .imgbox #bb{
+  justify-self: end; 
+  margin-left: 65px;
+  margin-top: 15px;
+ } 
+#T3{
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 30px;
+  Font-weight: 300;
+  Line-height: 39px;
+  color: rgb(51,51,51); 
+  text-align: center;
+}
+.txt{
+  text-align: center;
+}
+.txt > #bb{
+  height: 40px;
+  width: 210px;
+  Font-size: 12px;
+  
+}
+.txt > #bb:hover{
+  cursor: pointer;
+}
+hr{
+  opacity: 10%;
+  }
+.CR{
+  font-family: Roboto, Arial, sans-serif;
+  Font-size: 12px;
+  Font-weight: 400;
+  Line-height: 15.6px;
+  color: rgb(171,171,171);
+  padding:  16px 0 16px 0;
+  text-align: center;
+}
+.CR >.C{
+  color: blue;
+}
