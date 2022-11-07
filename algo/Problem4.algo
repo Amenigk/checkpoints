@@ -1,0 +1,22 @@
+
+PROCEDUR Permut(a,b:VAR)
+VAR
+  p:INTEGER
+ BEGIN
+   p:=a;
+   a:=b;
+   b:=p ; 
+END
+ALGORITHM InsertSort
+VAR
+    i,j:INTEGER:=0;
+    p: ARRAY_OF INTEGER[]
+    n:=arr.length-1
+BEGIN
+ FOR i FROM 1 TO n  STEP 1  DO 
+       FOR j FROM i+1 TO j>-1   DO 
+       IF (arr[j+1]<arr[i]) THEN   Permut(arr[i],arr[j+1]) END_IF
+       j:=j-1
+       END_FOR
+  END_FOR     
+END

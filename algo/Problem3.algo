@@ -1,0 +1,30 @@
+PROCEDURE dot_product(v1,v2:ARRAY_OF INTEGER[],ps:INTEGER)
+VAR
+  i:INTEGER:=0;
+  l:= v1.length-1;
+  m:= v2.length-1;
+BEGIN
+    IF (l<>m) THEN Write(' vectors length are not equals') 
+    else FOR i FROM 0 TO l STEP 1  DO
+         ps+=v1[i]*v2[i] ;
+         END_FOR
+    END_IF 
+    IF (ps==0) THEN  Write('vectors are ortogonals')   
+    END_IF
+END
+
+ALGORITHM PS
+VAR
+    vectors:=ARRAY_OF ARRAY []
+    i,j:INTEGER:=0;
+    n:=vectors.length-1
+BEGIN
+    Write ('enter vectors array')
+    Read(vectors)
+      FOR i FROM 0 TO n  STEP 1  DO 
+        FOR j FROM i+1 TO n  STEP 1  DO 
+      dot_product(vectors[i],vectors[i+1])   
+        END_FOR
+      END_FOR  
+        
+END

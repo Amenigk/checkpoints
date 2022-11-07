@@ -13,20 +13,20 @@ VAR
     bl:BOOLEAN:=false;
        FOR j FROM 0 TO b.length-1 STEP 1  DO 
          IF (a[i]<> b[j]) THEN  bl:= true  END_IF
-         j:=j+1
+         
        END_FOR
         IF (bl== false) THEN   sum+=a[i]*a[i]     END_IF                    
-         i:=i+1
+      
 
     END_FOR
      FOR j FROM 0 TO b.length-1 STEP 1  DO
       bl:BOOLEAN:=false;
        FOR i FROM 0 TO a.length-1 STEP 1  DO 
          IF (a[i]== b[j]) THEN bl:= true   END_IF
-         i:=i+1
+         
     END_FOR
      IF (bl== false) THEN   sum+=b[j]*b[j]      END_IF  
-    j=:j+1
+
     END_FOR
 
     Write(sum) Write('is the sum of the not overlapped element of the two array ')   
